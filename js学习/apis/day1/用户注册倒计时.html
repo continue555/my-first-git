@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10">
+        用户注册协议
+        大森林里事件发生批发价阿斯顿bask等哈算了列宁斯大林看上的里看到库拉索尼大量的你
+    </textarea>
+    <br>
+    <button class="btn" disabled>我已阅读用户协议(5)</button>
+    <script>
+        let btn = document.querySelector('.btn')
+        let time = 5
+        let n = setInterval(function () {
+            time--
+            btn.innerHTML = `我已阅读用户协议(${time})`
+            if (time === 0) {
+                clearInterval(n)
+                btn.disabled = false
+                btn.innerHTML = '同意'
+            }
+        }, 1000)
+
+    </script>
+
+
+
+</body>
+
+</html>

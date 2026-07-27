@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let sum = +prompt('请您输入总秒数')
+    function gettime(n) {
+      let h = parseInt(n / 60 / 60 % 24)
+      let m = parseInt(n / 60 % 60)
+      let s = parseInt(n % 60)
+
+      function ch(t) {
+        if (t < 10) {
+          t = '0' + t;
+          return t
+        }
+      }
+      h = ch(h)
+      m = ch(m)
+      s = ch(s)
+
+      return [h, m, s]
+    }
+    let arr = gettime(sum)
+    document.write(`${arr[0]}:${arr[1]}:${arr[2]}`)
+
+
+
+  </script>
+</body>
+
+</html>

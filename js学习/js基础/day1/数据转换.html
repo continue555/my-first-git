@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 隐式转换1.+号两边只要有一个字符串,都会把另一个转换成字符串
+    // 2.除了+号以外的算术运算符,比如- * /等都会把数据转换成数字类型
+    console.log(1 + 1);
+    console.log(1 + 'pink');
+    console.log(2 + 2);
+    console.log(2 + '2');//22
+    console.log(2 - 2);
+    console.log(2 - '2');//0
+    console.log(+12);
+    console.log(+'123');//转换为数字类型 
+
+
+    //显示转换NaN也是数字类型
+    let str = '123'
+    console.log(Number(str))
+    console.log(Number('pink'))
+    // let num=+prompt('请输入你的年薪')
+    // let num=Number(prompt('请输入你的年薪'))
+    //  console.log(num);
+    // let num=prompt('请输入你的年薪')
+    // console.log(Number(num));
+    console.log(parseInt('12px'));
+    console.log(parseInt('12.34px'));
+    console.log(parseInt('12.94px'));
+    console.log(parseInt('abc12.94px'));
+
+    console.log(parseFloat('12px'));
+    console.log(parseFloat('12.34px'));
+    console.log(parseFloat('12.94px'));
+    console.log(parseFloat('abc12.94px'));
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

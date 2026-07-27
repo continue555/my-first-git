@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .big {
+      display: flex;
+      border-left: 10px solid black;
+      border-bottom: 10px solid black;
+      width: 700px;
+      height: 300px;
+      margin: 50px auto;
+      justify-content: space-around;
+      align-items: flex-end;
+      text-align: center;
+
+
+    }
+
+    .big>div {
+      display: flex;
+      width: 50px;
+      background-color: deeppink;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+
+    .big div span {
+      margin-top: -20px;
+    }
+
+    .big div h4 {
+      margin-bottom: -35px;
+      width: 70px;
+      margin-left: -10px;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    //增
+    let arr = ['100', '110', '90']
+    arr.push('45')
+    console.log(arr.push('45'));
+    console.log(arr);
+    document.write(` <div class='big'>`)
+    for (let i = 0; i < arr.length; i++) {
+      document.write(` 
+      <div style="height:${arr[i]}px">
+       <span>${arr[i]}</span>
+       <h4>第${i + 1}</h4>
+       </div>`)
+
+    }
+    document.write(`</div>`)
+
+    arr.unshift('60')
+    console.log(arr.unshift('70'));
+    console.log(arr);
+
+    // //删
+    // let arr = ['pink', 'black', 'red']
+    // arr.pop()
+    // console.log(arr);
+    // console.log(arr.pop());
+
+    // arr.shift()
+    // console.log(arr.shihft);
+
+    // arr.splice(0, 2)//(起始位置，删除个数)
+    // arr.splice(1)//从下标1开始删除后面所有
+
+
+
+
+  </script>
+</body>
+
+</html>
